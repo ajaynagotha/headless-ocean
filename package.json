@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "lint": "next lint",
+    "watch": "pm2 start server.js --watch --name headless-ocean"
+  },
+  "main": "server.js",
+  "type": "module",
+  "_moduleAliases": {
+    "server": "server"
+  },
+  "dependencies": {
+    "axios": "^1.3.6",
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "jsdom": "^21.1.1",
+    "module-alias": "^2.2.2",
+    "next": "latest",
+    "node-fetch": "^2.6.9",
+    "npx": "^10.2.2",
+    "redis": "^4.6.5",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.1"
+  }
+}
